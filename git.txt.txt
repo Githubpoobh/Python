@@ -1,0 +1,87 @@
+bhand@Computer MINGW64 ~/OneDrive/Desktop/Git (master)
+$ whoami
+bhand
+
+bhand@Computer MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git config --global user.name "githubpoobh"
+
+bhand@Computer MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git config --global user.email "bhandarepooja230@gmail.com"
+
+bhand@Computer MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git config user.name
+githubpoobh
+
+bhand@Computer MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git config user.email
+bhandarepooja230@gmail.com
+
+bhand@Computer MINGW64 ~/OneDrive/Desktop/Git (master)
+$ ls
+SQLQuery1.sql
+
+bhand@Computer MINGW64 ~/OneDrive/Desktop/Git (master)
+$ ls -ltr
+total 8
+-rw-r--r-- 1 bhand 197609 6466 Mar  5 23:14 SQLQuery1.sql
+
+bhand@Computer MINGW64 ~/OneDrive/Desktop/Git (master)
+$ ls -lrt
+total 8
+-rw-r--r-- 1 bhand 197609 6466 Mar  5 23:14 SQLQuery1.sql
+
+bhand@Computer MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git init
+Initialized empty Git repository in C:/Users/bhand/OneDrive/Desktop/Git/.git/
+
+bhand@Computer MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        SQLQuery1.sql
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+bhand@Computer MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git add --a
+
+bhand@Computer MINGW64 ~/OneDrive/Desktop/Git (master)
+$ rm  --cached
+rm: unknown option -- cached
+Try 'rm --help' for more information.
+
+bhand@Computer MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git commit -m "1st repose"
+[master (root-commit) 3a5bcf4] 1st repose
+ 1 file changed, 208 insertions(+)
+ create mode 100644 SQLQuery1.sql
+
+bhand@Computer MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+bhand@Computer MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git remote add prigin "https://github.com/Githubpoobh/Git1.git"
+
+bhand@Computer MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git remote add origin "https://github.com/Githubpoobh/Git1.git"
+
+bhand@Computer MINGW64 ~/OneDrive/Desktop/Git (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 1.93 KiB | 1.93 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Githubpoobh/Git1.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+bhand@Computer MINGW64 ~/OneDrive/Desktop/Git (master)
+$
